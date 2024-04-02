@@ -72,29 +72,58 @@
 .header-menu {
   flex: 0 0 auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
 }
 .header-link {
+  font-size: 0.875rem;
+  align-self: flex-end;
   margin-top: var(--dl-space-space-halfunit);
   transition: 0.3s;
+  font-family: "Open Sans";
+  font-weight: 400;
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-transform: none;
   text-decoration: none;
 }
 .header-link:hover {
   color: var(--dl-color-gray-500);
 }
 .header-link1 {
+  font-size: 0.875rem;
+  align-self: flex-end;
   margin-top: var(--dl-space-space-halfunit);
   transition: 0.3s;
+  font-family: "Open Sans";
+  font-weight: 400;
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-transform: none;
   text-decoration: none;
 }
 .header-link1:hover {
+  color: var(--dl-color-gray-500);
+}
+.header-link2 {
+  font-size: 0.875rem;
+  align-self: flex-start;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-transform: none;
+  text-decoration: none;
+}
+.header-link2:hover {
   color: var(--dl-color-gray-500);
 }
 .header-container1 {
@@ -183,19 +212,19 @@
 .header-navlink2:hover {
   color: var(--dl-color-gray-500);
 }
-.header-text {
+.header-text2 {
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.header-text:hover {
+.header-text2:hover {
   color: var(--dl-color-gray-500);
 }
-.header-text1 {
+.header-text3 {
   transition: 0.3s;
   text-decoration: none;
 }
-.header-text1:hover {
+.header-text3:hover {
   color: var(--dl-color-gray-500);
 }
 .header-bot {
