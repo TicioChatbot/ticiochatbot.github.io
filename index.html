@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <title>Ticio</title>
-    <meta property="og:title" content="Ticio" />
+    <title>Ticio Main</title>
+    <meta property="og:title" content="Ticio Main" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -12,8 +12,8 @@
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: Open Sans;
-        font-size: 1rem;
+        font-family: Inter;
+        font-size: 16px;
       }
 
       body {
@@ -22,10 +22,11 @@
         text-decoration: none;
         text-transform: none;
         letter-spacing: normal;
-        line-height: 1.625;
-        color: var(--dl-color-secondary-400);
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
 
+        fill: var(--dl-color-gray-black);
       }
     </style>
     <link
@@ -33,28 +34,19 @@
       href="https://unpkg.com/animate.css@4.1.1/animate.css"
     />
     <link
-      rel="shortcut icon"
-      href="public/ticio sin fondo1.png"
-      type="icon/png"
-      sizes="32x32"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
     <link
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-    <style>
-      html * {
-          -webkit-font-smoothing: antialiased;
-      }
-      input::placeholder, textarea::placeholder {
-         color: #d2d6da;
-      }
-    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -62,189 +54,397 @@
       <link href="./index.css" rel="stylesheet" />
 
       <div class="home-container">
-        <div data-role="Header" class="header-header">
-          <nav class="header-nav">
-            <div class="header-container">
-              <a href="index.html" class="header-navlink">Ticio</a>
-              <div class="header-menu">
-                <a href="#Home" class="header-link">Home</a>
-                <a href="#demo" class="header-link1">Demo</a>
-                <a href="#info" class="header-link2">
-                  <span>Info</span>
-                  <br />
-                </a>
-              </div>
-              <div class="header-container1">
-              </div>
-            </div>
-          </nav>
-          <div data-role="MobileMenu" class="header-mobile-menu">
-            <div class="header-top">
-              <a href="index.html" class="header-navlink1 Large">
-                Soft UI Design System
+        <header data-thq="thq-navbar" class="home-navbar">
+          <img alt="image" src="public/Branding/ticio.svg" class="home-image" />
+          <div
+            data-thq="thq-navbar-nav"
+            data-role="Nav"
+            class="home-desktop-menu"
+          ></div>
+          <div data-thq="thq-navbar-btn-group" class="home-nav-content">
+            <nav
+              data-thq="thq-navbar-nav-links"
+              data-role="Nav"
+              class="home-nav"
+            >
+              <a
+                href="#caracteristicas"
+                class="home-link button-clean nav-link"
+              >
+                ¿Cómo funciona?
               </a>
-              <div data-role="CloseMobileMenu" class="header-close-menu">
-                <svg viewBox="0 0 1024 1024" class="header-icon2">
-                  <path
-                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="header-mid">
-              <div class="header-menu1">
-                <a href="index.html" class="header-navlink2 Large">Home</a>
-                <span class="header-text2 Large">Profile</span>
-                <span class="header-text3 Large">Coming Soon</span>
-              </div>
-            </div>
-            <div class="header-bot">
-              <div class="primary-pink-button-container">
-                <button class="primary-pink-button-button button ButtonSmall">
-                  <span>buy now</span>
-                </button>
-              </div>
+              <a
+                href="#sobre-nosotros"
+                class="home-link1 button-clean nav-link"
+              >
+                Sobre nosotros
+              </a>
+            </nav>
+            <div class="home-get-started get-started">
+              <a href="https://app.ticio.co">
+                <span class="home-text">Prueba la app</span>
+              </a>
             </div>
           </div>
-        </div>
-        <div class="home-container01"></div>
-        <div class="home-hero">
-          <div id="Home" class="home-container02">
-            <div id="Home" class="home-card">
-              <h1 class="home-text">¡Ha llegado Ticio!</h1>
-              <span class="home-text01">
-                <span>
-                  Eleva tu práctica legal aprovechando la inteligencia artificial
-                  con la generación aumentada.
-                </span>
-                <span>
-                  Experimenta con nuestro demo, diseñado para generar análisis
-                  basados exclusivamente en la jurisprudencia de la Corte
-                  Constitucional, transformando tu manera de investigar y
-                  redactar documentos legales.
-                </span>
-                <br />
-                <br />
-                <span>Siguenos:</span>
-                <br />
-              </span>
-              <a
-                href="https://www.linkedin.com/company/ticio"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link"
-              >
+        </header>
+        <section class="home-section" id="home-section">
+          <div class="home-hero">
+            <div class="home-content">
+              <main class="home-main">
+                <header class="home-header">
+                  <h1 class="home-heading">Eleva tu práctica legal</h1>
+                  <span class="home-caption">
+                    Experimenta con nuestro demo, diseñado para generar análisis
+                    basados exclusivamente en la jurisprudencia de la Corte
+                    Constitucional, transformando tu manera de investigar y
+                    redactar documentos legales.
+                  </span>
+                </header>
+                <div class="home-buttons">
+                  <div class="home-get-started1 button">
+                    <a href="https://app.ticio.co">
+                      <span class="home-text06">Prueba la app</span>
+                    </a>
+                  </div>
+                  <a href="#caracteristicas" class="home-link2">
+                    <div class="home-get-started2 button">
+                      <span class="home-text07">
+                        <span>¿Cómo funciona?</span>
+                        <br />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+            </div>
+            <div class="home-image01">
+              <img
+                alt="image"
+                src="public/SectionImages/ticio-notebook-main-1000w.png"
+                class="home-image02"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="caracteristicas" class="home-section2">
+          <header class="home-header1">
+            <h2 class="home-text23">¿Cómo funciona?</h2>
+            <span class="home-text24">
+              Nuestra aplicación con tecnología de inteligencia artificial ayuda
+              a realizar tus prácticas legales de forma eficiente y a la
+              vanguardia.
+            </span>
+          </header>
+          <section class="home-note1">
+            <div class="home-image05">
+              <div class="home-container03">
                 <img
                   alt="image"
-                  src="public/li-in-bug-1500h.png"
-                  class="home-image"
+                  src="public/SectionImages/rag1-200h.png"
+                  class="home-image06"
                 />
-              </a>
+              </div>
             </div>
-            <img
-              alt="image"
-              src="public/Ticio/ticio%20sin%20fondo-500h.png"
-              class="home-image1"
-            />
-          </div>
-        </div>
-        <div id="demo" class="home-container03"></div>
-        <div class="home-container04">
-          <div id="demo" class="home-container05">
-            <h1 id="Demo" class="home-text10">
-              <span>¿Como usar nuestro demo?</span>
-              <br />
-            </h1>
-            <i class="home-text13">
-              Escribe el tema que deseas consultar en la barra de búsqueda y
-              espera unos segundos a que Ticio redacte tu concepto
-            </i>
-            <br />
-          </div>
-        </div>
-        <div class="home-features">
-          <iframe
-            src="https://ticio-corteconstitucional.hf.space"
-            width="850"
-            frameborder="0"
-            allowfullscreen="true"
-            class="home-iframe"
-          ></iframe>
-        </div>
-        <div class="home-container06">
-          <h6 class="home-text14">
-            Este demo de aplicación provee respuestas basadas en sentencias tipo
-            T de tutela de los últimos cinco años (2020-2024) y se limita a esos
-            datos. Su precisión depende de la actualidad y disponibilidad de la
-            información jurídica, por lo tanto, se aconseja verificar la
-            veracidad de las respuestas consultando fuentes legales o
-            asesoramiento profesional. Al usar esta aplicación, se acepta que
-            sus creadores no son responsables por la exactitud o aplicabilidad
-            de la información proporcionada, siendo el usuario el único
-            responsable de su uso. Se enfatiza la importancia de una revisión
-            humana para la correcta interpretación y aplicación de la
-            jurisprudencia.
-          </h6>
-        </div>
-        <div id="info" class="home-container07"></div>
-        <h1>¿Que es la Generación Aumentada?&nbsp;</h1>
-        <div class="home-container08">
-          <i class="home-text16">
-            En el corazón de Ticio yace una tecnología innovadora conocida como
-            Generación Aumentada por Recuperación (RAG por sus siglas en
-            inglés). Esta solución de vanguardia representa un avance
-            significativo en cómo los profesionales legales acceden, analizan y
-            utilizan la información.&nbsp;La Generación Aumentada por
-            Recuperación es un modelo híbrido de IA que combina lo mejor de dos
-            mundos: la comprensión profunda de los modelos de lenguaje y los
-            sistemas de recuperación de información precisos y enfocados. RAG
-            funciona identificando primero la información exacta necesaria de
-            una vasta base de datos y luego personalizando la generación de
-            texto basada en esta información recuperada. Este proceso asegura
-            que la información proporcionada sea tanto altamente relevante como
-            rica contextualmente, permitiendo a los profesionales legales tomar
-            decisiones informadas más rápidamente que nunca.
-          </i>
-        </div>
-        <div class="home-container09"></div>
-        <h1>¿Por Qué RAG para el Derecho?</h1>
-        <div class="home-container10">
-          <i class="home-text18">
-            En el campo legal, donde la precisión de la información y la
-            velocidad de recuperación son primordiales, RAG destaca al ofrecer
-            precisión con recuperación de información dirigida que asegura
-            obtener exactamente lo necesario en el momento adecuado. Reduce
-            significativamente el tiempo dedicado a revisar documentos y
-            expedientes con asistencia potenciada por IA y se adapta a diversas
-            necesidades, ya sea en la redacción de contratos, preparación para
-            litigios o gestión de riesgos.
-          </i>
-        </div>
-        <div class="home-container11"></div>
-        <h1>¿Por Qué Elegir Ticio?</h1>
-        <div class="home-container12">
-          <i class="home-text20">
-            En un mundo donde la tecnología avanza a pasos agigantados, la
-            práctica legal no se queda atrás. Ticio emerge como el socio
-            tecnológico definitivo para abogados, ofreciendo un abanico de
-            productos y soluciones dentro de un ecosistema de Generación
-            Aumentada&nbsp;completamente integrado y gestionado.&nbsp;Lo que
-            distingue a Ticio es su enfoque holístico hacia la innovación legal.
-            Nuestros productos no son soluciones aisladas; forman parte de un
-            ecosistema pensado de principio a fin para ser consumido por
-            abogados.
-          </i>
-        </div>
-        <footer class="footer-footer footer-root-class-name">
-          <div class="footer-container">
-            <div class="footer-container1">
-              <span class="footer-text">TICIO</span>
-              <span class="footer-text1">
-                Copyright © 2024 ticio.co - Todos los derechos reservados.
-              </span>
+            <div class="home-content2">
+              <div class="home-main2">
+                <div class="home-caption1">
+                  <span class="home-section3 section-head">
+                    Tempor incididunt
+                  </span>
+                </div>
+                <div class="home-heading02" id="Que_es">
+                  <h2 class="home-heading03 section-heading">
+                    <span>¿Que es la Generación Aumentada?&nbsp;</span>
+                    <br />
+                  </h2>
+                  <p class="home-paragraph1 section-description">
+                    <span>
+                      En el corazón de Ticio yace una tecnología innovadora
+                      conocida como
+                    </span>
+                    <span class="home-text28">
+                      Generación Aumentada por Recuperación
+                    </span>
+                    <span>(RAG por sus siglas en inglés).</span>
+                    <br />
+                    <span>
+                      Esta solución de vanguardia representa un avance
+                      significativo en cómo los profesionales legales acceden,
+                      analizan y utilizan la información.&nbsp;
+                    </span>
+                    <br />
+                    <span>
+                      La Generación Aumentada por Recuperación es un modelo
+                      híbrido de IA que combina lo mejor de dos mundos:
+                    </span>
+                    <span class="home-text34">
+                      la comprensión profunda de los modelos de lenguaje y los
+                      sistemas de recuperación de información precisos y
+                      enfocados.
+                    </span>
+                    <span></span>
+                    <br />
+                    <span>RAG funciona</span>
+                    <span class="home-text38">
+                      identificando primero la información exacta necesaria de
+                      una vasta base de datos y luego personalizando la
+                      generación de texto basada en esta información recuperada.
+                    </span>
+                    <span>
+                      Este proceso asegura que la información proporcionada sea
+                      tanto altamente relevante como rica contextualmente,
+                      permitiendo a los profesionales legales tomar decisiones
+                      informadas más rápidamente que nunca.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="home-get-started3 button">
+                <a href="https://app.ticio.co">
+                  <span class="home-text40">Prueba la app</span>
+                </a>
+              </div>
             </div>
+          </section>
+          <section class="home-note2">
+            <div class="home-image07">
+              <img
+                alt="image"
+                src="public/SectionImages/ragticio-200h.png"
+                class="home-image08"
+              />
+            </div>
+            <div class="home-content3">
+              <main class="home-main3">
+                <header class="home-caption2">
+                  <span class="home-section4 section-head">
+                    Tempor incididunt
+                  </span>
+                </header>
+                <main class="home-heading04" id="Porque">
+                  <header class="home-header2">
+                    <h2 class="home-heading05 section-heading">
+                      ¿Por Qué RAG para el Derecho?
+                    </h2>
+                    <p class="home-paragraph2 section-description">
+                      <span>
+                        En el campo legal, donde la precisión de la información
+                        y la velocidad de recuperación son primordiales, RAG
+                        destaca al ofrecer precisión con recuperación de
+                        información dirigida que asegura obtener exactamente lo
+                        necesario en el momento adecuado.
+                      </span>
+                      <br />
+                      <span class="home-text43">
+                        Reduce significativamente el tiempo dedicado a revisar
+                        documentos y expedientes con asistencia potenciada por
+                        IA
+                      </span>
+                      <span>
+                        y se adapta a diversas necesidades, ya sea en la
+                        redacción de contratos, preparación para litigios o
+                        gestión de riesgos.
+                      </span>
+                    </p>
+                  </header>
+                  <div class="home-checkmarks"></div>
+                </main>
+              </main>
+              <div class="home-get-started4 button">
+                <a href="https://app.ticio.co">
+                  <span class="home-text45">Prueba la app</span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="home-note3">
+            <div class="home-image09">
+              <div class="home-container04">
+                <img
+                  alt="image"
+                  src="public/Branding/ticio.svg"
+                  class="home-image10"
+                />
+              </div>
+            </div>
+            <div class="home-content4">
+              <div class="home-main4">
+                <div class="home-caption3">
+                  <span class="home-section5 section-head">
+                    Tempor incididunt
+                  </span>
+                </div>
+                <div class="home-heading06" id="Why">
+                  <h2 class="home-heading07 section-heading">
+                    <span>¿Por Qué Elegir Ticio?</span>
+                    <br />
+                  </h2>
+                  <p class="home-paragraph3 section-description">
+                    <span>
+                      En un mundo donde la tecnología avanza a pasos
+                      agigantados, la práctica legal no se debe quedar atrás.
+                    </span>
+                    <span class="home-text49">
+                      Ticio emerge como el socio tecnológico definitivo para
+                      abogados, ofreciendo un abanico de productos y soluciones
+                      dentro de un ecosistema de Generación
+                      Aumentada&nbsp;completamente integrado y gestionado.
+                    </span>
+                    <span>&nbsp;</span>
+                    <br />
+                    <span>
+                      Lo que distingue a Ticio es su enfoque holístico hacia la
+                      innovación legal. Nuestros productos no son soluciones
+                      aisladas; forman parte de un ecosistema pensado de
+                      principio a fin para ser consumido por abogados.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="home-get-started5 button">
+                <a href="https://app.ticio.co">
+                  <span class="home-text53">Prueba la app</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="sobre-nosotros" class="home-section6">
+          <header class="home-header3">
+            <h2 class="home-text54">Sobre nosotros</h2>
+          </header>
+          <section class="home-note4">
+            <div class="home-image11">
+              <div class="home-container05">
+                <img
+                  alt="image"
+                  src="public/SectionImages/sobre-nosotros-800h.png"
+                  class="home-image12"
+                />
+              </div>
+            </div>
+            <div class="home-container06">
+              <div class="home-container07">
+                <div class="home-container08">
+                  <div class="home-content5">
+                    <div class="home-main5">
+                      <div class="home-caption4">
+                        <span class="home-section7 section-head">
+                          Tempor incididunt
+                        </span>
+                      </div>
+                      <div class="home-heading08">
+                        <h2 class="home-heading09 section-heading">
+                          <span>Jacobo Gómez Posada</span>
+                          <br />
+                        </h2>
+                        <h1 class="home-text57">Abogado</h1>
+                        <p class="home-paragraph4 section-description">
+                          Graduado de la Universidad de La Sabana de Bogotá,
+                          con visión futurista y entusiasta de las nuevas tecnologías. 
+                          Se destaca por su capacidad de integrar avances tecnológicos en el campo legal, 
+                          promoviendo la innovación y eficiencia en la práctica jurídica.
+                        </p>
+                        <div class="home-icons">
+                          <a href="https://www.instagram.com/drpilindio/">
+                            <img
+                              alt="image"
+                              src="public/Icons/instagram.svg"
+                              class="home-image13"
+                            />
+                          </a>
+                          <a href="https://www.linkedin.com/in/jacobo-g%C3%B3mez-posada/">
+                            <img
+                              alt="image"
+                              src="public/Icons/linkedin.svg"
+                              class="home-image14"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <footer class="home-footer">
+          <div class="home-content6">
+            <main class="home-main-content">
+              <div class="home-content7">
+                <header class="home-main6">
+                  <div class="home-header4">
+                    <img
+                      alt="image"
+                      src="public/Branding/ticio.svg"
+                      class="home-image15"
+                    />
+                  </div>
+                </header>
+                <header class="home-categories">
+                  <div class="home-category">
+                    <div class="home-links">
+                      <span class="home-text58 footer-link">Contenido</span>
+                      <a href="#Que_es">
+                        <span class="home-text59 footer-link">
+                          Generación Aumentada
+                        </span>
+                      </a>
+                      <a href="#Porque">
+                        <span class="home-text60 footer-link">
+                          ¿Por Qué RAG para el Derecho?
+                        </span>
+                      </a>
+                      <a href="#Why">
+                        <span class="home-text61 footer-link">
+                          ¿Por Qué Elegir Ticio?
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home-category1">
+                    <div class="home-links1">
+                      <span class="home-text62 footer-link">Menú</span>
+                      <a href="#home-section"><span class="home-text63 footer-link">Inicio</span></a>
+                      <a href="#caracteristicas"><span class="home-text64 footer-link">¿Cómo funciona? </span></a>
+                      <a href="#sobre-nosotros"><span class="home-text65 footer-link">Sobre nosotros</span></a>
+                    </div>
+                  </div>
+                </header>
+                <div class="home-container09">
+                  <div class="home-socials">
+                    <div class="home-container10">
+                      <span class="home-text66 footer-link">Síguenos</span>
+                    </div>
+                  </div>
+                  <div class="home-container11">
+                    <a href="https://www.youtube.com/channel/UCkbteqwpvZtlZ-P_ETHTtJw">
+                      <img
+                        alt="image"
+                        src="public/Icons/youtube-red.svg"
+                        class="home-image16"
+                      />
+                    </a>
+                    <a href="https://www.linkedin.com/company/ticio/">
+                      <img
+                        alt="image"
+                        src="public/Icons/linkedin-red.svg"
+                        class="home-image17"
+                      />
+                    </a>
+                    <a href="https://github.com/TicioChatbot">
+                      <img
+                        alt="image"
+                        src="public/Icons/github-red.svg"
+                        class="home-image18"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </main>
           </div>
-          <img alt="image" src="public/waves-white.svg" class="footer-image" />
         </footer>
       </div>
     </div>
